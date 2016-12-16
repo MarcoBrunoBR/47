@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  font-size: 16px;
+  font-family: Arial;
+  margin: 40px;
+}
+
+button {
+  color: inherit;
+  font-size: inherit;
+}
+
+.cartao {
+  background-color: red;
+  padding: 35px;
+  color: #FFF;
+  width: 400px;
+  position: relative;
+  /*position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);*/
+}
+
+  .cartao-conteudo:focus {
+    background-color: blue;
+  }
+
+
+  .cartao:hover .cartao-menu {
+    opacity: 1;
+  }
+
+  .cartao-menu {
+    position: absolute;
+    top: -25px;
+    left: 10px;
+    opacity: 0;
+  }
+    .cartao-menu-opcao {
+      width: 50px;
+      height: 50px;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+    .cartao-menu-edita {
+      background-color: yellow;
+      color: black;
+    }
